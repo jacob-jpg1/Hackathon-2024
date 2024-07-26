@@ -1,0 +1,10 @@
+{
+    "name": "Weather Extension",
+    "version": "1.0.0",
+    "description": "Have the Weather alerts",
+    "manifest_version": 3,
+    "author": "Jacob and Carolina",
+    "action": {
+        "default_popup": "index.html"
+      }
+}
