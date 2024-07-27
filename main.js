@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         currentFC.id = "currentForecast"
                         document.querySelector('.container').appendChild(currentFC)
 
+                        const weatherLogo = document.createElement('img')
+                        weatherLogo.src = `${data2.properties.periods[0].icon}`
+                        document.querySelector('.container').appendChild(weatherLogo)
+                        console.log(`${data2.properties.periods[0].icon}`)
+
                         const city = document.createElement('div')
                         city.textContent = `City: ${data.properties.relativeLocation.properties.city}`
                         city.id ="city"
@@ -38,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         const date = document.createElement('div')
                         date.textContent = `${formattedDate}`
                         document.querySelector('.container').appendChild(date)
+
                     })
             })
         }
