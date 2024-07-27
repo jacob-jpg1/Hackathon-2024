@@ -6,5 +6,8 @@
     "author": "Jacob and Carolina",
     "action": {
         "default_popup": "index.html"
-      }
+      },
+    "permissions" :[
+        "geolocation"
+    ]
 }
