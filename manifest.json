@@ -6,12 +6,12 @@
     "author": "Jacob and Carolina",
     "action": {
         "default_popup": "index.html"
+        
       },
     "permissions" :[
         "geolocation"
     ],
     "background": {
-        "scripts": [ "background.js" ],
-        "persistent": false 
+        "service-worker": "background.js"
       } 
 }
